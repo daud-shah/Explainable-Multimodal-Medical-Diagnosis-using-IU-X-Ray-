@@ -1,0 +1,6 @@
+
+| Model            | Mean AUC |
+|------------------|----------|
+| Vision-only      | 0.590 |
+| Text-only        | 0.859  |
+| Multimodal (Ours)| 0.862 |

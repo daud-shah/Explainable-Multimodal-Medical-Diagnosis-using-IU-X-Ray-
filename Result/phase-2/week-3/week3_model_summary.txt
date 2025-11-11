@@ -1,0 +1,47 @@
+
+================================================================================
+WEEK 3: MODEL ARCHITECTURE SUMMARY
+================================================================================
+
+1. ARCHITECTURE COMPONENTS
+--------------------------------------------------------------------------------
+✓ Vision Encoder:        ViT-Base (google/vit-base-patch16-224)
+✓ Text Encoder:          ClinicalBERT (Bio_ClinicalBERT)
+✓ Fusion Module:         Cross-Attention (8 heads)
+✓ Classification Head:   2-layer MLP with dropout
+
+2. MODEL STATISTICS
+--------------------------------------------------------------------------------
+Total Parameters:        201,400,591
+Trainable Parameters:    6,701,071
+Frozen Parameters:       194,699,520
+Memory Usage:            ~768.3 MB
+
+3. PARAMETER BREAKDOWN
+--------------------------------------------------------------------------------
+Vision Encoder (ViT):    86,389,248 (frozen)
+Text Encoder (BERT):     108,310,272 (frozen)
+Fusion Module:           6,500,352 (trainable)
+Classification Head:     200,719 (trainable)
+
+4. INPUT/OUTPUT SPECIFICATIONS
+--------------------------------------------------------------------------------
+Image Input:             (batch_size, 3, 224, 224)
+Text Input:              (batch_size, max_length) tokenized
+Output:                  (batch_size, 15) multi-label logits
+
+5. ARCHITECTURE DESIGN CHOICES
+--------------------------------------------------------------------------------
+✓ Frozen Encoders:       Transfer learning from pretrained models
+✓ Cross-Attention:       Learns bidirectional image-text relationships
+✓ Multi-Label Output:    Supports multiple diseases per image
+✓ Dropout (0.3):         Prevents overfitting on small dataset
+
+6. MODEL READY FOR
+--------------------------------------------------------------------------------
+✓ Training (Week 4)
+✓ Explainability (Grad-CAM, SHAP) (Week 5)
+✓ Evaluation (Week 6)
+
+Generated: 2025-11-04 07:31:25.651144
+================================================================================

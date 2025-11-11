@@ -1,0 +1,67 @@
+
+================================================================================
+WEEK 1: COMPREHENSIVE DATA EXPLORATION REPORT
+IU Chest X-Ray Dataset Analysis
+================================================================================
+
+1. DATASET OVERVIEW
+--------------------------------------------------------------------------------
+Total Images Found:              7,470
+Total Reports:                   3,851
+Estimated Image-Report Pairs:    3,851
+
+2. IMAGE STATISTICS (from 500 sample images)
+--------------------------------------------------------------------------------
+
+Dimensions:
+  Width:  1840-2500 pixels (mean: 2156)
+  Height: 2048-2961 pixels (mean: 2217)
+
+File Sizes:
+  Min:    0.01 MB
+  Max:    2.88 MB
+  Mean:   1.81 MB
+  Estimated Total: 13.2 GB
+
+3. REPORT STATISTICS
+--------------------------------------------------------------------------------
+Total Reports: 3,851
+Text Columns Found: ['image', 'findings']
+
+Report Length Statistics:
+  Mean:   34 words
+  Median: 33 words
+  Min:    2 words
+  Max:    195 words
+
+4. DATA DISTRIBUTION
+--------------------------------------------------------------------------------
+  normal                                  :   1379 ( 35.8%)
+  No Indexing                             :     92 (  2.4%)
+  Lung                                    :     86 (  2.2%)
+  Calcified Granuloma                     :     84 (  2.2%)
+  Thoracic Vertebrae                      :     59 (  1.5%)
+  Spine                                   :     41 (  1.1%)
+  Calcinosis                              :     39 (  1.0%)
+  Opacity                                 :     35 (  0.9%)
+  Cardiomegaly                            :     29 (  0.8%)
+  Scoliosis                               :     28 (  0.7%)
+
+5. KEY FINDINGS
+--------------------------------------------------------------------------------
+✓ Dataset successfully loaded and analyzed
+✓ 7,470 X-ray images available
+✓ 3,851 radiology reports
+✓ Images are diverse in dimensions and size
+✓ Reports contain clinical text data
+
+6. NEXT STEPS (WEEK 2)
+--------------------------------------------------------------------------------
+1. Image preprocessing (resize to 224×224 for ViT)
+2. Text preprocessing and tokenization
+3. Create train/validation/test splits
+4. Handle class imbalance if present
+5. Build PyTorch DataLoader
+
+Generated: 2025-11-03 07:25:07.439351
+================================================================================

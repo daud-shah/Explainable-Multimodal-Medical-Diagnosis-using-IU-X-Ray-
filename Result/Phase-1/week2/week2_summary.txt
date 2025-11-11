@@ -1,0 +1,80 @@
+
+================================================================================
+WEEK 2: DATA PREPROCESSING SUMMARY
+IU X-Ray Dataset
+================================================================================
+1. DATA STATISTICS
+--------------------------------------------------------------------------------
+Total valid image-report pairs: 3,851
+Train samples: 2,695 (70.0%)
+Validation samples: 578 (15.0%)
+Test samples: 578 (15.0%)
+2. PREPROCESSING STEPS COMPLETED
+--------------------------------------------------------------------------------
+✓ Text cleaning and normalization
+✓ Label extraction and multi-label encoding
+✓ Image-report matching
+✓ Stratified train/val/test split
+✓ Class weight computation
+✓ PyTorch Dataset and DataLoader creation
+3. IMAGE PREPROCESSING
+--------------------------------------------------------------------------------
+Target size: 224×224 pixels
+Color space: RGB (3 channels)
+Normalization: ImageNet mean/std
+Augmentation: Random flip, rotation, color jitter (train only)
+4. TEXT PREPROCESSING
+--------------------------------------------------------------------------------
+Max length: 512 tokens (approximate)
+Cleaning: Lowercase, special char removal, whitespace normalization
+Empty reports: Removed
+5. LABEL DISTRIBUTION
+--------------------------------------------------------------------------------
+Total classes: 15
+Classes: aorta, calcified granuloma, calcinosis, cardiomegaly, cicatrix, density, diaphragm, lung, markings, normal, opacity, pleural effusion, pulmonary atelectasis, spine, thoracic vertebrae
+Per-class distribution:
+ aorta          :   166 samples (  6.2%), weight=8.12
+ calcified granuloma:   178 samples (  6.6%), weight=7.57
+ calcinosis     :   201 samples (  7.5%), weight=6.70
+ cardiomegaly   :   238 samples (  8.8%), weight=5.66
+ cicatrix       :   130 samples (  4.8%), weight=10.37
+ density        :    79 samples (  2.9%), weight=17.06
+ diaphragm      :   100 samples (  3.7%), weight=13.47
+ lung           :   403 samples ( 15.0%), weight=3.34
+ markings       :   117 samples (  4.3%), weight=11.52
+ normal         :   945 samples ( 35.1%), weight=1.43
+ opacity        :   309 samples ( 11.5%), weight=4.36
+ pleural effusion:   108 samples (  4.0%), weight=12.48
+ pulmonary atelectasis:   224 samples (  8.3%), weight=6.02
+ spine          :   132 samples (  4.9%), weight=10.21
+ thoracic vertebrae:   169 samples (  6.3%), weight=7.97
+
+6. CLASS IMBALANCE HANDLING
+--------------------------------------------------------------------------------
+Strategy: Class-weighted loss function
+Weights: Inversely proportional to class frequency
+Saved: class_weights.pt (for training)
+7. PYTORCH DATA PIPELINE
+--------------------------------------------------------------------------------
+Dataset class: ChestXrayDataset
+Batch size: 32
+Train batches: 85
+Val batches: 19
+Test batches: 19
+8. FILES CREATED
+--------------------------------------------------------------------------------
+✓ train_data.csv
+✓ val_data.csv
+✓ test_data.csv
+✓ label_encoder.pkl
+✓ class_weights.pt
+✓ config.pkl
+✓ week2_sample_batch.png
+9. READY FOR WEEK 3
+--------------------------------------------------------------------------------
+✅ Data is preprocessed and ready
+✅ DataLoaders tested and working
+✅ Class weights computed
+✅ Next step: Build model architecture (ViT + ClinicalBERT + Fusion)
+Generated: 2025-11-03 08:45:55.958438
+================================================================================

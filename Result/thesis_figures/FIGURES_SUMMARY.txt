@@ -1,0 +1,22 @@
+
+THESIS & PAPER GRAPHS — COMPLETE
+
+FOLDER: /kaggle/working/thesis_figures
+FIGURES (300 DPI):
+1. roc_curves.png → Figure 3
+2. pr_curves.png → Figure 4
+3. confusion_matrices.png → Figure 6
+4. calibration_curves.png → Figure 7
+5. per_class_auc.png → Figure 9
+6. gradcam_example_*.png → Figure 5
+7. All in one folder!
+
+DATA:
+- Test set: 578
+- Mean AUC: 0.862
+- Predictions saved: /kaggle/working/phase4_evaluation/preds.npy
+
+READY FOR:
+- IEEE JBHI
+- MSc Thesis
+- Presentation

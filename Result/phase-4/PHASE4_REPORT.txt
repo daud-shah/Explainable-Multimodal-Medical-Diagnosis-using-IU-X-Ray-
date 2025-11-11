@@ -1,0 +1,18 @@
+
+PHASE 4: FULL EVALUATION COMPLETE
+
+TEST SET: 578 samples
+MEAN AUC: 0.862
+MEAN F1:  0.348
+
+ABLATION:
+  Vision-only:  0.590
+  Text-only:    0.859
+  Multimodal:   0.862 ← BEST
+
+FILES:
+  • metrics.json
+  • TABLE3_ABLATION.txt
+  • phase3_results.zip (from Phase 3)
+
+READY FOR IEEE JBHI SUBMISSION!
