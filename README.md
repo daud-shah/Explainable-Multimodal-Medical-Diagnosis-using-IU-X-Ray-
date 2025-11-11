@@ -158,12 +158,12 @@ Generates clinically aligned heatmaps (e.g., highlights cardiac region for cardi
 ## 📚 Citation
 
 ```bibtex
-@misc{yourname2025multimodal,
+@misc{daud-shah2025multimodal,
   author = {Daud Shah},
   title = {Multimodal Fusion of Chest X-rays and Reports with Explainable Grad-CAM},
   year = {2025},
   publisher = {daud-shah},
-  howpublished = {\url{https://github.com/daud-shah/Explainable Multimodal Medical Diagnosis using IU X-Ray}}
+  howpublished = {https://github.com/daud-shah/Explainable Multimodal Medical Diagnosis using IU X-Ray}
 }
 ```
 
